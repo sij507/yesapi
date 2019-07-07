@@ -1,0 +1,195 @@
+{
+  "uid" : "8f85848c535b8f87",
+  "name" : "test_login_with_wrong_password",
+  "fullName" : "tests.login.test_login_with_wrong_password.TestLoginWithWrongPassword#test_login_with_wrong_password",
+  "historyId" : "b3cd1a0f3e0a5473d17d920cf2269781",
+  "time" : {
+    "start" : 1562365608181,
+    "stop" : 1562365608993,
+    "duration" : 812
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "set_up",
+    "time" : {
+      "start" : 1562365608179,
+      "stop" : 1562365608179,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Set up admin login params",
+      "time" : {
+        "start" : 1562365608179,
+        "stop" : 1562365608179,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Send a login request with wrong password",
+      "time" : {
+        "start" : 1562365608181,
+        "stop" : 1562365608990,
+        "duration" : 809
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Checking Ret",
+      "time" : {
+        "start" : 1562365608990,
+        "stop" : 1562365608991,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "78deb53f0b18bda4",
+        "name" : "Expected:",
+        "source" : "78deb53f0b18bda4.attach",
+        "type" : "text/plain",
+        "size" : 8
+      }, {
+        "uid" : "495b89c0c9fb0d16",
+        "name" : "Actual:",
+        "source" : "495b89c0c9fb0d16.attach",
+        "type" : "text/plain",
+        "size" : 8
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Checking Err_code",
+      "time" : {
+        "start" : 1562365608991,
+        "stop" : 1562365608992,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c62dd20dccfc2cdb",
+        "name" : "Expected:",
+        "source" : "c62dd20dccfc2cdb.attach",
+        "type" : "text/plain",
+        "size" : 11
+      }, {
+        "uid" : "f9f0b222d7434f9a",
+        "name" : "Actual:",
+        "source" : "f9f0b222d7434f9a.attach",
+        "type" : "text/plain",
+        "size" : 11
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Checking Err_msg",
+      "time" : {
+        "start" : 1562365608992,
+        "stop" : 1562365608993,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cbf822acee0a6be4",
+        "name" : "Expected:",
+        "source" : "cbf822acee0a6be4.attach",
+        "type" : "text/plain",
+        "size" : 50
+      }, {
+        "uid" : "93526d5a7f756351",
+        "name" : "Actual:",
+        "source" : "93526d5a7f756351.attach",
+        "type" : "text/plain",
+        "size" : 51
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Login Request"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_with_wrong_password"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginWithWrongPassword"
+  }, {
+    "name" : "host",
+    "value" : "SJ-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "17576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.login.test_login_with_wrong_password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f85848c535b8f87.json",
+  "parameterValues" : [ ]
+}

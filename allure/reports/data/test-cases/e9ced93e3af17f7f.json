@@ -1,0 +1,195 @@
+{
+  "uid" : "e9ced93e3af17f7f",
+  "name" : "test_alter_password_with_wrong_password",
+  "fullName" : "tests.alter_password.test_alter_password_with_long_password.TestAlterPasswordWithLongPassword#test_alter_password_with_wrong_password",
+  "historyId" : "6b13ceea5b4a2d7e775be5c5d2e264a1",
+  "time" : {
+    "start" : 1562365599780,
+    "stop" : 1562365600597,
+    "duration" : 817
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "set_up",
+    "time" : {
+      "start" : 1562365599780,
+      "stop" : 1562365599780,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Set up alter password params",
+      "time" : {
+        "start" : 1562365599780,
+        "stop" : 1562365599780,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Send an alter password request with wrong password",
+      "time" : {
+        "start" : 1562365599781,
+        "stop" : 1562365600594,
+        "duration" : 813
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Checking Ret",
+      "time" : {
+        "start" : 1562365600594,
+        "stop" : 1562365600595,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ddcb2dad6a14eb61",
+        "name" : "Expected:",
+        "source" : "ddcb2dad6a14eb61.attach",
+        "type" : "text/plain",
+        "size" : 8
+      }, {
+        "uid" : "3894ee40a756ede4",
+        "name" : "Actual:",
+        "source" : "3894ee40a756ede4.attach",
+        "type" : "text/plain",
+        "size" : 8
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Checking Err_code",
+      "time" : {
+        "start" : 1562365600595,
+        "stop" : 1562365600596,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "28518bfd8384bda9",
+        "name" : "Expected:",
+        "source" : "28518bfd8384bda9.attach",
+        "type" : "text/plain",
+        "size" : 11
+      }, {
+        "uid" : "1b4179aab670096c",
+        "name" : "Actual:",
+        "source" : "1b4179aab670096c.attach",
+        "type" : "text/plain",
+        "size" : 11
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Checking Err_msg",
+      "time" : {
+        "start" : 1562365600596,
+        "stop" : 1562365600597,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1835b9609971201a",
+        "name" : "Expected:",
+        "source" : "1835b9609971201a.attach",
+        "type" : "text/plain",
+        "size" : 62
+      }, {
+        "uid" : "89d6df6127d221cd",
+        "name" : "Actual:",
+        "source" : "89d6df6127d221cd.attach",
+        "type" : "text/plain",
+        "size" : 63
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Alter Password Request"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.alter_password"
+  }, {
+    "name" : "suite",
+    "value" : "test_alter_password_with_long_password"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAlterPasswordWithLongPassword"
+  }, {
+    "name" : "host",
+    "value" : "SJ-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "17576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.alter_password.test_alter_password_with_long_password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9ced93e3af17f7f.json",
+  "parameterValues" : [ ]
+}
