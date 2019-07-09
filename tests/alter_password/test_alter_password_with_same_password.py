@@ -1,24 +1,15 @@
 import allure
-from common import constants
-import pytest
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.alter_password import AlterPassword
 
 
 @allure.feature('Alter Password Request')
 class TestAlterPasswordWithSamePassword:
-    params = None
-
-    @pytest.fixture(autouse=True)
-    def set_up(self):
-        with allure.step('Set up alter password params'):
-            TestAlterPasswordWithSamePassword.params = Params.setup_alter_password_params(
-                constants.REGULAR_USERNAME, constants.MD5_PASSWORD, constants.MD5_PASSWORD, constants.APP_KEY)
-
     def test_alter_password_with_same_password(self):
         with allure.step('Send an alter password request with same password'):
-            alter_password_same_password = SendRequest(constants.GET, constants.BASE_URL,
-                                                       TestAlterPasswordWithSamePassword.params)
+            alter_password_same_password = SendRequest(
+                AlterPassword.get_test_case("test_alter_password_with_same_password"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

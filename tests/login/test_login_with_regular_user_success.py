@@ -1,23 +1,15 @@
 import allure
-from common import constants
-import pytest
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.login import Login
 
 
 @allure.feature('Login Request')
 class TestLoginwithRegularUserSuccess:
-    params = None
-
-    @pytest.fixture(autouse=True)
-    def set_up(self):
-        with allure.step('Set up admin login params'):
-            TestLoginwithRegularUserSuccess.params = Params.setup_login_params(
-                constants.REGULAR_USERNAME, constants.MD5_PASSWORD, constants.APP_KEY)
 
     def test_login_with_regular_user_success(self):
         with allure.step('Send a valid regular user login request'):
-            user_success_login = SendRequest(constants.GET, constants.BASE_URL, TestLoginwithRegularUserSuccess.params)
+            user_success_login = SendRequest(Login.get_test_case("test_login_with_regular_user_success"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

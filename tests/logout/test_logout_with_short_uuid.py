@@ -1,8 +1,9 @@
 import allure
-from common import constants
+from data import constants
 import pytest
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.logout import Logout
+from data.test_cases.login import Login
 
 
 @allure.feature('Logout Request')
@@ -11,24 +12,16 @@ class TestLogoutWithShortUuid:
 
     @pytest.fixture(autouse=True)
     def set_up(self):
-        with allure.step('Set up admin login params'):
-            params = Params.setup_login_params(
-                constants.ADMIN_USERNAME, constants.MD5_PASSWORD, constants.APP_KEY)
-
         with allure.step("send an admin login request"):
-            manager_success_login = SendRequest(constants.GET, constants.BASE_URL,
-                                                params)
+            manager_success_login = SendRequest(Login.get_test_case("test_login_with_admin_success"))
 
         with allure.step("Get admin token"):
             TestLogoutWithShortUuid.admin_token = manager_success_login.get_token()
 
     def test_log_out_with_admin_success(self):
-        with allure.step('Set up admin logout params'):
-            params = Params.setup_logout_params(constants.SHORT_UUID, TestLogoutWithShortUuid.admin_token,
-                                                constants.APP_KEY)
-
         with allure.step("Send an admin logout request"):
-            manager_logout_with_short_uuid = SendRequest(constants.GET, constants.BASE_URL, params)
+            manager_logout_with_short_uuid = SendRequest(Logout.get_test_case(
+                "test_logout_with_short_uuid", TestLogoutWithShortUuid.admin_token))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_400), "Expected:")

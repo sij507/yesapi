@@ -1,16 +1,21 @@
 import requests
+from data import constants
+import json
 
 
 class SendRequest:
 
-    def __init__(self, request_method, url, params):
-        if request_method == "get":
+    def __init__(self, test_case):
+        method = test_case["method"]
+        url = test_case["url"]
+        params = test_case["params"]
+        if method == constants.GET:
             self.response = requests.get(url=url, params=params).json()
-        if request_method == "post":
+        if method == constants.POST:
             self.response = requests.post(url=url, params=params).json()
 
     def get_response(self):
-        return self.response
+        return json.dumps(self.response, indent=2, sort_keys=True, ensure_ascii=False)
 
     def get_ret(self):
         return self.response['ret']

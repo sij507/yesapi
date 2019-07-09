@@ -1,9 +1,9 @@
 import allure
-from common import constants
-from common import common
 import pytest
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.register import Register
+from data.test_cases.users_list import UsersList
 
 
 @allure.feature('Register Request')
@@ -11,26 +11,18 @@ class TestRegisterNewUserSuccess:
 
     @pytest.mark.skip(reason="Skip it")
     def test_register_new_user_success(self):
-        with allure.step('Set up get users list params'):
-            users_list_params = Params.setup_users_list_params(
-                str(constants.DEFAULT_PAGE), constants.DEFAULT_PER_PAGE, constants.ROLE_ALL, constants.APP_KEY)
-
         with allure.step("Send a users list request before register"):
-            users_list_before_register = SendRequest(constants.GET, constants.BASE_URL, users_list_params)
+            users_list_before_register = SendRequest(UsersList.get_test_case("test_users_list_get_all"))
 
         with allure.step("Get number of users before new user registers"):
             num_of_users_before_register = users_list_before_register.get_total()
 
-        with allure.step('Set up new user register params'):
-            new_username = common.random_string(10)
-            register_params = Params.setup_register_params(new_username,constants.MD5_PASSWORD, constants.APP_KEY)
-
         with allure.step("Send a register request"):
-            success_register = SendRequest(constants.GET, constants.BASE_URL, register_params)
+            success_register = SendRequest(Register.get_test_case("test_register_new_user_success"))
 
         with allure.step("send a users list request after register"):
             new_username_uuid = success_register.get_uuid()
-            users_list_after_register = SendRequest(constants.GET, constants.BASE_URL, users_list_params)
+            users_list_after_register = SendRequest(UsersList.get_test_case("test_users_list_get_all"))
 
         with allure.step("Get number of users before new user registers"):
             num_of_users_after_register = users_list_after_register.get_total()

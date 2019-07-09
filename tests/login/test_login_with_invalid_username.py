@@ -1,24 +1,15 @@
 import allure
-from common import constants
-import pytest
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.login import Login
 
 
 @allure.feature('Login Request')
 class TestLoginWithInvalidUsername:
-    params = None
-
-    @pytest.fixture(autouse=True)
-    def set_up(self):
-        with allure.step('Set up admin login params'):
-            TestLoginWithInvalidUsername.params = Params.setup_login_params(
-                constants.WRONG_USERNAME, constants.MD5_PASSWORD, constants.APP_KEY)
 
     def test_login_with_invalid_username(self):
         with allure.step('Send a login request with invalid username'):
-            invalid_username_login = SendRequest(constants.GET, constants.BASE_URL,
-                                                 TestLoginWithInvalidUsername.params)
+            invalid_username_login = SendRequest(Login.get_test_case("test_login_with_invalid_username"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

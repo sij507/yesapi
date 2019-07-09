@@ -1,18 +1,16 @@
 import allure
-from common import constants
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.register import Register
 
 
 @allure.feature('Register Request')
 class TestRegisterWithExistingUsername:
 
     def test_register_new_user_success(self):
-        with allure.step('Set up new user register params'):
-            register_params = Params.setup_register_params(constants.REGULAR_USERNAME, constants.MD5_PASSWORD, constants.APP_KEY)
-
         with allure.step("Send a register request"):
-            register_with_existing_username = SendRequest(constants.GET, constants.BASE_URL, register_params)
+            register_with_existing_username = SendRequest(
+                Register.get_test_case("test_register_with_existing_username"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

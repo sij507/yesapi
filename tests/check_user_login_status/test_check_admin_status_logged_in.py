@@ -1,9 +1,9 @@
 import allure
-from common import constants
+from data import constants
 import pytest
 from request.send_request import SendRequest
-from common.params import Params
-
+from data.test_cases.check_user_status import CheckUserStatus
+from data.test_cases.login import Login
 
 @allure.feature('Check User Status Request')
 class TestAdminStatusLoggedIn:
@@ -11,22 +11,16 @@ class TestAdminStatusLoggedIn:
 
     @pytest.fixture(autouse=True)
     def set_up(self):
-        with allure.step('Set up admin login params'):
-            admin_login_params = Params.setup_login_params(constants.ADMIN_USERNAME,
-                                                           constants.MD5_PASSWORD, constants.APP_KEY)
         with allure.step("Send an admin login status request(logged in)"):
-            admin_success_login = SendRequest(constants.GET, constants.BASE_URL, admin_login_params)
+            admin_success_login = SendRequest(Login.get_test_case("test_login_with_admin_success"))
 
         with allure.step("Get admin login token"):
             TestAdminStatusLoggedIn.admin_token = admin_success_login.get_token()
 
     def test_admin_status_logged_in(self):
-        with allure.step("Set up check admin status login params"):
-            params = Params.setup_check_params(constants.ADMIN_UUID, TestAdminStatusLoggedIn.admin_token,
-                                               constants.APP_KEY)
-
         with allure.step("Send a check admin user status request"):
-            check_login_status_logged_in = SendRequest(constants.GET, constants.BASE_URL, params)
+            check_login_status_logged_in = SendRequest(
+                CheckUserStatus.get_test_case("test_check_admin_status_logged_in"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

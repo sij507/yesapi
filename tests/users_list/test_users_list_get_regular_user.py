@@ -1,23 +1,14 @@
 import allure
-from common import constants
-import pytest
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
+from data.test_cases.users_list import UsersList
 
 
 @allure.feature('Get Users List Request')
 class TestUsersListGetRegularUser:
-    params = None
-
-    @pytest.fixture(autouse=True)
-    def set_up(self):
-        with allure.step('Set up regular users list params'):
-            TestUsersListGetRegularUser.params = Params.setup_users_list_params(
-                str(constants.DEFAULT_PAGE), constants.PER_PAGE_15, constants.ROLE_USER, constants.APP_KEY)
-
     def test_users_list_get_regular_user(self):
         with allure.step("Send a get list request with role user, page 2 and 15 per page"):
-            all_regular_user_list = SendRequest(constants.GET, constants.BASE_URL, TestUsersListGetRegularUser.params)
+            all_regular_user_list = SendRequest(UsersList.get_test_case("test_users_list_get_regular_users"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

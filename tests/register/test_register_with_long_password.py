@@ -1,20 +1,16 @@
 import allure
-from common import constants
+from data import constants
 from request.send_request import SendRequest
-from common.params import Params
-from common import common
+from data.test_cases.register import Register
 
 
 @allure.feature('Register Request')
 class TestRegisterLongPassword:
 
     def test_register_with_long_password(self):
-        with allure.step('Set up new user register params'):
-            new_username = common.random_string(10)
-            register_params = Params.setup_register_params(new_username, constants.LONG_MD5_PASSWORD, constants.APP_KEY)
-
         with allure.step("Send a register request"):
-            register_with_long_password = SendRequest(constants.GET, constants.BASE_URL, register_params)
+            register_with_long_password = SendRequest(
+                Register.get_test_case("test_register_with_long_password"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_400), "Expected:")
