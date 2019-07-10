@@ -5,12 +5,12 @@ from data.test_cases.alter_password import AlterPassword
 
 
 @allure.feature('Alter Password Request')
-class TestAlterPasswordWithInvalidUsername:
+class TestAlterPasswordWithNonexistentUsername:
 
-    def test_alter_password_with_wrong_username(self):
-        with allure.step('Send an alter password request with invalid username'):
+    def test_alter_password_with_nonexistent_username(self):
+        with allure.step('Send alter password request with nonexistent username'):
             alter_password_invalid_username = SendRequest(
-                AlterPassword.get_test_case("test_alter_password_with_invalid_username"))
+                AlterPassword.get_test_case("test_alter_password_with_nonexistent_username"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")

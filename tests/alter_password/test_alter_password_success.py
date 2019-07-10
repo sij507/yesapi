@@ -17,7 +17,7 @@ class TestAlterPasswordSuccess:
 
     @pytest.mark.alter_password
     def test_alter_password_success(self):
-        with allure.step('Send an alter password success request'):
+        with allure.step('Send alter password request(success)'):
             alter_password_success = SendRequest(AlterPassword.get_test_case("test_alter_password_success"))
 
         with allure.step('Checking Ret'):

@@ -13,24 +13,23 @@ class TestLogOutWithAdminSuccess:
     @pytest.fixture(autouse=True)
     def set_up(self):
         with allure.step("send an admin login request"):
-            manager_success_login = SendRequest(Login.get_test_case("test_login_with_admin_success"))
+            admin_success_login = SendRequest(
+                Login.get_test_case("test_login_with_admin_success"))
 
         with allure.step("Get admin token"):
-            TestLogOutWithAdminSuccess.admin_token = manager_success_login.get_token()
+            TestLogOutWithAdminSuccess.admin_token = admin_success_login.get_token()
 
     def test_log_out_with_admin_success(self):
-
         with allure.step("Send an admin logout request"):
-            manager_success_logout = SendRequest(Logout.get_test_case(
+            admin_success_logout = SendRequest(Logout.get_test_case(
                 "test_logout_with_admin_success", TestLogOutWithAdminSuccess.admin_token))
-            print(manager_success_logout.get_response())
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")
-            allure.attach("Ret: " + str(manager_success_logout.get_ret()), "Actual:")
-            assert manager_success_logout.get_ret() == constants.RET_200
+            allure.attach("Ret: " + str(admin_success_logout.get_ret()), "Actual:")
+            assert admin_success_logout.get_ret() == constants.RET_200
 
         with allure.step('Checking Err_code'):
             allure.attach("Err_code: " + str(constants.ERR_CODE_0), "Expected:")
-            allure.attach("Err_code: " + str(manager_success_logout.get_err_code()), "Actual:")
-            assert manager_success_logout.get_err_code() == constants.ERR_CODE_0
+            allure.attach("Err_code: " + str(admin_success_logout.get_err_code()), "Actual:")
+            assert admin_success_logout.get_err_code() == constants.ERR_CODE_0

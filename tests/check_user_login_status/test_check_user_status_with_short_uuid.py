@@ -8,9 +8,9 @@ from data.test_cases.check_user_status import CheckUserStatus
 class TestCheckUserStatusShortUuid:
 
     def test_user_status_not_logged_in(self):
-        with allure.step("Send an user login request(not logged in"):
+        with allure.step("Send check user status request with short uuid"):
             check_login_status_with_short_uuid = SendRequest(
-                CheckUserStatus.get_test_case("test_check_user_status_short_uuid"))
+                CheckUserStatus.get_test_case("test_check_user_status_with_short_uuid"))
 
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_400), "Expected:")

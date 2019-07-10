@@ -8,7 +8,7 @@ from data.test_cases.check_user_status import CheckUserStatus
 class TestUserStatusNotLoggedIn:
 
     def test_user_status_not_logged_in(self):
-        with allure.step("Send an user login request(not logged in"):
+        with allure.step("Send check user status request(not logged in"):
             check_login_status_not_logged_in = SendRequest(
                 CheckUserStatus.get_test_case("test_check_user_status_not_logged_in"))
 

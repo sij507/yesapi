@@ -8,7 +8,7 @@ from data.test_cases.register import Register
 class TestRegisterShortPassword:
 
     def test_register_with_short_password(self):
-        with allure.step("Send a register request"):
+        with allure.step("Send a register request with short password"):
             register_with_short_password = SendRequest(
                 Register.get_test_case("test_register_with_short_password"))
 

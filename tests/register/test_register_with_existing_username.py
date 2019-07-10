@@ -8,7 +8,7 @@ from data.test_cases.register import Register
 class TestRegisterWithExistingUsername:
 
     def test_register_new_user_success(self):
-        with allure.step("Send a register request"):
+        with allure.step("Send a register request with existing username"):
             register_with_existing_username = SendRequest(
                 Register.get_test_case("test_register_with_existing_username"))
 

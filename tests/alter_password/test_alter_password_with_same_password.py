@@ -6,8 +6,9 @@ from data.test_cases.alter_password import AlterPassword
 
 @allure.feature('Alter Password Request')
 class TestAlterPasswordWithSamePassword:
+
     def test_alter_password_with_same_password(self):
-        with allure.step('Send an alter password request with same password'):
+        with allure.step('Send alter password request with same password'):
             alter_password_same_password = SendRequest(
                 AlterPassword.get_test_case("test_alter_password_with_same_password"))
 

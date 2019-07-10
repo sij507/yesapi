@@ -1,66 +1,111 @@
+from common import common
+from data import constants
+
 
 class Params:
 
     @staticmethod
-    def setup_alter_password_params(username, old_password, new_password, app_key):
-        params = {
+    def setup_alter_password_params(app_key, username, old_password, new_password, uuid=None, token=None):
+        tmp_params = {
+            'app_key': app_key,
+            'new_password': new_password,
+            'old_password': old_password,
             'service': "App.User.AlterPassword",
             'username': username,
-            'old_password': old_password,
-            'new_password': new_password,
-            'app_key': app_key
+            'token': token,
+            'uuid': uuid
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
     @staticmethod
-    def setup_login_params(username, new_password, app_key):
-
-        params = {
+    def setup_login_params(username, password, app_key):
+        tmp_params = {
+            'app_key': app_key,
+            'password': password,
             'service': "App.User.Login",
             'username': username,
-            'password': new_password,
-            'app_key': app_key
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
     @staticmethod
     def setup_check_params(uuid, token, app_key):
-        params = {
+        tmp_params = {
+            'app_key': app_key,
             'service': "App.User.Check",
-            'uuid': uuid,
             'token': token,
-            'app_key': app_key
+            'uuid': uuid
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
     @staticmethod
-    def setup_logout_params(uuid, admin_token, app_key):
-        params = {
+    def setup_logout_params(uuid, token, app_key):
+        tmp_params = {
+            'app_key': app_key,
             'service': "App.User.Logout",
-            'uuid': uuid,
-            'token': admin_token,
-            'app_key': app_key
+            'token': token,
+            'uuid': uuid
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
     @staticmethod
-    def setup_users_list_params(page, per_page, role, app_key):
-        params = {
-            'service': "App.User.GetList",
+    def setup_users_list_params(app_key, page=None, per_page=None, role=None, uuid=None, token=None):
+        tmp_params = {
+            'app_key': app_key,
             'page': page,
             'perpage': per_page,
             'role': role,
-            'app_key': app_key
+            'service': "App.User.GetList",
+            'token': token,
+            'uuid': uuid
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
     @staticmethod
-    def setup_register_params(username, password, app_key):
-        params = {
+    def setup_register_params(app_key, username, password, uuid=None, token=None, ext_info=None):
+        tmp_params = {
+            'app_key': app_key,
+            'ext_info': ext_info,
+            'password': password,
             'service': "App.User.Register",
             'username': username,
-            'password': password,
-            'app_key': app_key
+            'token': token,
+            'uuid': uuid
         }
+        params = {}
+        for key in tmp_params:
+            if tmp_params[key] is not None:
+                params[key] = tmp_params[key]
+        if constants.SIGN:
+            params['sign'] = common.generate_sign(params)
         return params
 
