@@ -24,7 +24,7 @@ class TestLoginWithAdminSuccess:
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_200), "Expected:")
             allure.attach("Ret: " + str(login_with_admin_success.get_ret()), "Actual:")
-            expect(login_with_admin_success.get_ret() == constants.RET_200)
+            assert login_with_admin_success.get_ret() == constants.RET_200
 
         with allure.step('Checking Err_code'):
             allure.attach("Err_code: " + str(constants.ERR_CODE_0), "Expected:")
