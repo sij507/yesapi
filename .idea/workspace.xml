@@ -2,93 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86512b83-62f9-4c07-ad3d-270b3851db6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_101_per_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_app_key_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_long_app_key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_long_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_long_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_short_app_key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_short_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_short_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_wrong_app_key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test_cases/users_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_cases/users_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/send_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/request/send_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_with_0_per_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_new_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_new_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_old_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_old_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_long_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_nonexistent_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_nonexistent_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_same_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_same_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_new_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_new_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_old_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_old_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_short_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_wrong_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_wrong_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_wrong_old_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_with_wrong_old_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_new_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_new_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_old_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_old_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_admin_status_logged_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_admin_status_logged_in.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_not_logged_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_not_logged_in.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_short_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_wrong_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_without_uuid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_admin_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_admin_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_banned_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_banned_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_long_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_long_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_long_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_long_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_long_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_long_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_nonexistent_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_nonexistent_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_regular_user_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_regular_user_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_short_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_short_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_short_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_short_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_short_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_short_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_wrong_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_wrong_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_with_wrong_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_with_wrong_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_without_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_without_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_without_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login/test_login_without_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login/test_login_without_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_admin_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_admin_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_long_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_long_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_long_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_long_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_long_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_long_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_short_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_short_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_short_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_short_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_short_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_short_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_with_wrong_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_with_wrong_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_without_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_without_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_without_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logout/test_logout_without_uuid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logout/test_logout_without_uuid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_new_user_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_new_user_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_existing_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_existing_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_long_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_long_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_long_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_long_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_long_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_long_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_short_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_short_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_short_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_short_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_short_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_short_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_with_wrong_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_with_wrong_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_without_app_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_without_app_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_without_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_without_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/register/test_register_without_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/register/test_register_without_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users_list/test_users_list_get_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_get_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users_list/test_users_list_get_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_get_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users_list/test_users_list_get_regular_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users_list/test_users_list_get_regular_user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/register/test_register_new_user_success.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -113,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/users_list/test_users_list_with_app_key_only.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/login/test_login_with_admin_success.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="33" column="86" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
+            <state relative-caret-position="45">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -242,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_old_password.py" />
         <option value="$PROJECT_DIR$/tests/alter_password/test_alter_password_without_username.py" />
         <option value="$PROJECT_DIR$/tests/check_user_login_status/test_check_admin_status_logged_in.py" />
         <option value="$PROJECT_DIR$/tests/check_user_login_status/test_check_user_status_with_long_app_key.py" />
@@ -293,11 +206,12 @@
         <option value="$PROJECT_DIR$/tests/users_list/test_users_list_with_wrong_app_key.py" />
         <option value="$PROJECT_DIR$/tests/users_list/test_users_list_without_app_key.py" />
         <option value="$PROJECT_DIR$/tests/register/test_register_new_user_success.py" />
+        <option value="$PROJECT_DIR$/tests/login/test_login_with_admin_success.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-52" />
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1420" />
     <option name="height" value="830" />
@@ -316,6 +230,17 @@
             <path>
               <item name="yesapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yesapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yesapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yesapi" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yesapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yesapi" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -526,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562727675958</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1562886217243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562886217244</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -571,7 +503,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-52" y="23" width="1420" height="830" extended-state="0" />
+    <frame x="1" y="23" width="1420" height="830" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79286927" visible="true" weight="0.3400287" />
       <window_info id="Structure" order="1" sideWeight="0.20713073" side_tool="true" weight="0.37340876" />
@@ -721,16 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/login/test_login_with_admin_success.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1130,7 +1052,17 @@
     <entry file="file://$PROJECT_DIR$/tests/register/test_register_new_user_success.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/login/test_login_with_admin_success.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
