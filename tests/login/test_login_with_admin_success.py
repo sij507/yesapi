@@ -2,7 +2,6 @@ import allure
 from request.send_request import SendRequest
 from data import constants
 from data.test_cases.login import Login
-from delayed_assert import expect
 
 
 @allure.feature('Login Request')
