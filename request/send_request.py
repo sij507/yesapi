@@ -15,7 +15,7 @@ class SendRequest:
             self.response = requests.post(url=url, params=params).json()
 
     def get_response(self):
-        return json.dumps(self.response, indent=2, sort_keys=True, ensure_ascii=False)
+        return json.dumps(self.response, indent=2, ensure_ascii=False)
 
     def get_ret(self):
         return self.response['ret']

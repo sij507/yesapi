@@ -12,12 +12,12 @@ class TestAlterPasswordWithShortOldPassword:
             alter_password_with_short_old_password = SendRequest(
                 AlterPassword.get_test_case("test_alter_password_with_short_old_password"))
 
+        with allure.step("Checking msg"):
+            allure.attach("Msg contains: " + constants.ERR_MSG_OLD_PASSWORD_TOO_SHORT, "Expected")
+            allure.attach("Msg: " + alter_password_with_short_old_password.get_msg(), "Actual:")
+            assert constants.ERR_MSG_OLD_PASSWORD_TOO_SHORT in alter_password_with_short_old_password.get_msg()
+
         with allure.step('Checking Ret'):
             allure.attach("Ret: " + str(constants.RET_400), "Expected:")
             allure.attach("Ret: " + str(alter_password_with_short_old_password.get_ret()), "Actual:")
             assert alter_password_with_short_old_password.get_ret() == constants.RET_400
-
-        with allure.step("Checking msg"):
-            allure.attach("Msg: " + constants.ERR_MSG_ALTER_PSW_OLD_PASSWORD_TOO_SHORT, "Expected")
-            allure.attach("Msg: " + alter_password_with_short_old_password.get_msg(), "Actual:")
-            assert alter_password_with_short_old_password.get_msg() == constants.ERR_MSG_ALTER_PSW_OLD_PASSWORD_TOO_SHORT
