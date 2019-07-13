@@ -90,6 +90,5 @@ class UsersList:
                 "params": Params.setup_users_list_params(
                     constants.APP_KEY, str(constants.DEFAULT_PAGE), constants.PER_PAGE_0)
             }
-
         }
         return users_list[test_case_name]
